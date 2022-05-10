@@ -1,0 +1,4 @@
+*.class
+*.csv
+SalesCountry/
+inputMapReduce/
