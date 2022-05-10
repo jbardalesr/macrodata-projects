@@ -14,4 +14,4 @@ This repository is part of a BigData course at National University of Engineerin
 - Jordi Bardales Rojas
 - Jesús Torrejón León 
 - Freider Achic Cuenca
-- Juan Contrina Muñoz
+- Juan Carlos Cotrina Muñoz

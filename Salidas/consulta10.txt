@@ -1,0 +1,144 @@
+Argentina	
+			->[Pamela-Ayacucho]
+Australia	
+			->Piret-Bunbury
+			->Chris-Gold Coast
+Austria	
+			->Gloria Gail -WalcProduct3ee
+			->Macy-Inner City
+Bahrain	
+			->[Dez-Al 'Adliyah]
+Belgium	
+			->Mike-La Louviere
+			->Christine-Antwerpen
+Bermuda	
+			->[Elizabeth-Hamilton]
+Brazil	
+			->Joachim-Fortaleza
+			->Sorcha-Porto Alegre
+Bulgaria	
+			->[Tg-Zagore]
+Canada	
+			->Tanya-Carcross
+			->Lisa-Anse Comeau
+Cayman Isls	
+			->[Daria-George Town]
+China	
+			->[Rachel-Taicheng]
+Costa Rica	
+			->[Melanie-Santa Barbaraa]
+Czech Republic	
+			->Lauren-Hradec Kralove
+			->Courtney-Suchdol
+Denmark	
+			->Lauren-Laasby
+			->Tomasz-Klampenborg
+Dominican Republic	
+			->[Sarah-Santo Domingo City]
+Finland	
+			->Lena-Kuopio
+			->Smith-Lahti
+France	
+			->James-Guer
+			->Alyssa-Antibes
+Germany	
+			->Rebecca-Berlin
+			->Damian-Mettlach
+Greece	
+			->[Chevonne-Athina]
+Guatemala	
+			->[Glen-Atlantida]
+Hong Kong	
+			->[Ana-Hong Kong]
+Hungary	
+			->Aideen And Jonathan-Kecskemet
+			->Line-Budaors
+Iceland	
+			->[Camille And Carmen-Thorlakshofn]
+India	
+			->Barbara-Hyderabad
+			->Lisa-Gurgaon
+Ireland	
+			->Nicola -Sneem
+			->Nita-Sutton
+Israel	
+			->[Renee Elisabeth-Tel Aviv]
+Italy	
+			->Michel-Lipari
+			->Michael-Milano
+Japan	
+			->Christy-Setagaya
+			->Anjan-Tokyo
+Jersey	
+			->[Luisa-Gorey]
+Kuwait	
+			->[Campbell-Mushrif]
+Latvia	
+			->[Emily-Vecmilgravis]
+Luxembourg	
+			->[Eric-Gasperich]
+Malaysia	
+			->[Diana-Kuala Lumpur]
+Malta	
+			->Erica-Nadur
+			->Seemab-San Pawl tat-Targa
+Mauritius	
+			->[Christiane-Black River]
+Moldova	
+			->[Andrea-Bubuieci]
+Monaco	
+			->Mimi-Monte-Carlo
+			->Mimi-Monte-Carlo
+Netherlands	
+			->Regina-Glimmen
+			->Nola-Den Haag
+New Zealand	
+			->Hale-Hawera
+			->Elsa-Waiwera
+Norway	
+			->Krista-Bergen
+			->Jennifer-Nordstrand
+Philippines	
+			->Lisa -Borja
+			->Heather-Baluan
+Poland	
+			->Elyssa-Gdansk
+			->Giovanna-Pruszkow
+Romania	
+			->[Gustavo-Voluntari]
+Russia	
+			->[Ron -Tsaritsyno]
+South Africa	
+			->Marian-Durban
+			->Filip And Teresa-Centurion
+South Korea	
+			->[Deedee-Songnae-dong]
+Spain	
+			->Andrew-Sevilla
+			->Jan-Barcelona
+Sweden	
+			->Ayelet-Malmo
+			->Marion-Umea
+Switzerland	
+			->Louise-Balgach
+			->Sarah-Plan-les-Ouattes
+Thailand	
+			->Elaine-Phuket
+			->Patrick-Ban Khlong Sip
+The Bahamas	
+			->Emily-Killarney
+			->Cormac-Freeport City
+Turkey	
+			->Darian-Izmir
+			->Sylvia-Zekeriyakoy
+Ukraine	
+			->[Aziz-Irpin']
+United Arab Emirates	
+			->Kathrin-Abu Dhabi
+			->Family-Dubai
+United Kingdom	
+			->Ravinder-Lurgan
+			->Astrid-Canterbury
+United States	
+			->Hilde -Princeville                 
+			->Danny-St Thomas                   
