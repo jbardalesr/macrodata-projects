@@ -13,11 +13,7 @@ public class SalesMapper extends MapReduceBase implements Mapper<LongWritable, T
 	public void map(LongWritable key, Text value, OutputCollector<Text, IntWritable> output, Reporter reporter) throws IOException {
 		String valueString = value.toString();
 		String[] SingleCountryData = valueString.split(",");
-                /*if("Product1".equals(SingleCountryData[1])){
-                    numero = new IntWritable(Integer.parseInt(SingleCountryData[2]));
-                }else{
-                    numero = new IntWritable(999999999);
-                }*/
+                //3 -> Payment_Type 6 -> Estado 7 -> Pais
 		output.collect(new Text(SingleCountryData[3].trim()+"-"+SingleCountryData[6].trim()+"-" + SingleCountryData[7].trim()), one);
 	}
 }

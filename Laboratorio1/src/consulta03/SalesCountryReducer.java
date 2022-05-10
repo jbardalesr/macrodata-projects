@@ -11,9 +11,10 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
 
 	public void reduce(Text t_key, Iterator<Text> values, OutputCollector<Text,Text> output, Reporter reporter) throws IOException {
 		Text key = t_key;
+                //Mapear tipo de pago : veces usadas
                 Map<String, Integer> map = new HashMap<String,Integer>();
                 Iterator<Text> values_cardType = values;
-		//int frequencyForCountry = 0;
+                
 		int mayor_tipo = Integer.MIN_VALUE;
                 int menor_tipo = Integer.MAX_VALUE;
                 while(values_cardType.hasNext()){
@@ -25,6 +26,8 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
                         map.put(value_cardType.toString(),1);
                     }
                 }
+                
+                //Obtener el minimo y maximo
                 for(Integer frec: map.values()){
                     if(frec>mayor_tipo){
                         mayor_tipo=frec;
@@ -33,10 +36,11 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
                         menor_tipo=frec;
                     }
                 }
+                //La salida son los registros que se encuentran en el rango de menor_tipo, mayor_tipo
                 for(String k: map.keySet()){
                     int v = map.get(k);
                     if(v>menor_tipo && v<mayor_tipo){
-                        output.collect(new Text(k + key.toString()), new Text(Integer.toString(v)));
+                        output.collect(new Text(k + "-" + key.toString()), new Text(Integer.toString(v)));
                     } 
                 }
 	}

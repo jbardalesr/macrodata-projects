@@ -11,16 +11,18 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
 
 	public void reduce(Text t_key, Iterator<Text> values, OutputCollector<Text,Text> output, Reporter reporter) throws IOException {
 		Text key = t_key;
-        Map<String, Integer> map = new HashMap<String,Integer>();
+                //Mapear ganancia total por ciudades
+                Map<String, Integer> map = new HashMap<String,Integer>();
 		//int frequencyForCountry = 0;
 		int mayor_ventas = Integer.MIN_VALUE;
                 while(values.hasNext()){
                     Text value = (Text) values.next();
-                    if(map.containsKey(value.toString())){
-                        int val_map = map.get(value.toString());
-                        map.replace(value.toString(),val_map+1);
+                    String city_price[] = value.toString().split("-");
+                    if(map.containsKey(city_price[0])){
+                        int val_map = map.get(city_price[0]);
+                        map.replace(city_price[0],val_map+Integer.parseInt(city_price[1]));
                     }else{
-                        map.put(value.toString(),1);
+                        map.put(city_price[0],Integer.parseInt(city_price[1]));
                     }
                 }
                 for(Integer frec: map.values()){
@@ -30,7 +32,7 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
                 }
                 for(String city: map.keySet()){
                     if(map.get(city)==mayor_ventas){
-                        output.collect(key, new Text(city));
+                        output.collect(key, new Text(city + "-" + Integer.toString(mayor_ventas)));
                         break;
                     }
                 }
