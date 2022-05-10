@@ -18,12 +18,13 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
 
 	public void reduce(Text t_key, Iterator<Text> values, OutputCollector<Text,Text> output, Reporter reporter) throws IOException {
 		Text key = t_key;
-		//int frequencyForCountry = 0;
+                
                 Date mas_reciente = new Date(0,5,3);
                 String nombre = "";
-		//int mayor_tipo = Integer.MIN_VALUE;
+		
                 Date date = new Date();
                 SimpleDateFormat formatter = new SimpleDateFormat("MM/dd/yy HH:mm");
+                //convertimos cada fecha a tipo Date y comparamos hasta obtener el más reciente
                 while(values.hasNext()){
                     String value = values.next().toString();
                     String nombreFecha [] = value.split("-");       

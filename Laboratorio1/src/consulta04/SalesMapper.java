@@ -14,6 +14,7 @@ public class SalesMapper extends MapReduceBase implements Mapper<LongWritable, T
 		String valueString = value.toString();
 		String[] SingleCountryData = valueString.split(",");
                 if(!"Price".equals(SingleCountryData[2])){
+                    //7 -> Country, 4 -> Name 8 -> Account_created
                     output.collect(new Text(SingleCountryData[7].trim()), new Text(SingleCountryData[4].trim()+"-"+SingleCountryData[8].trim()));
                 }
 		

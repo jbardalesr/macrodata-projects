@@ -12,7 +12,6 @@ public class SalesCountryReducer extends MapReduceBase implements Reducer<Text, 
 	public void reduce(Text t_key, Iterator<IntWritable> values, OutputCollector<Text,IntWritable> output, Reporter reporter) throws IOException {
 		Text key = t_key;
 		int frequencyForCountry = 0;
-		//int menor_tipo = Integer.MAX_VALUE;
                 while(values.hasNext()){
                     IntWritable value = (IntWritable) values.next();
                     frequencyForCountry+=value.get();

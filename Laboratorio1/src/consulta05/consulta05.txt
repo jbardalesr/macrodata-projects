@@ -1,0 +1,55 @@
+Argentina	Ayacucho-1200
+Australia	Melbourne-6000
+Austria	WalcProduct3ee-3600
+Bahrain	Al 'Adliyah-1200
+Belgium	Brussels-6000
+Bermuda	Hamilton-1200
+Brazil	Campinas-7500
+Bulgaria	Zagore-1200
+Canada	Toronto-16800
+Cayman Isls	George Town-1200
+China	Taicheng-1200
+Costa Rica	Santa Barbaraa-1200
+Czech Republic	Prague-3600
+Denmark	Rungsted-2400
+Dominican Republic	Santo Domingo City-1200
+Finland	Kuopio-1200
+France	Paris-14400
+Germany	Munich-4800
+Greece	Athina-1200
+Guatemala	Atlantida-1200
+Hungary	Budaors-1200
+Iceland	Thorlakshofn-1200
+India	Gurgaon-1200
+Ireland	Navan-7500
+Israel	Tel Aviv-1200
+Italy	Lipari-16200
+Japan	Setagaya-1200
+Jersey	Gorey-1200
+Kuwait	Mushrif-1200
+Latvia	Vecmilgravis-1200
+Luxembourg	Gasperich-1200
+Malaysia	Kuala Lumpur-1200
+Malta	San Pawl tat Targa-3600
+Mauritius	Black River-3600
+Moldova	Bubuieci-1200
+Monaco	Monte Carlo-1200
+Netherlands	Den Haag-19500
+New Zealand	Waiau Pa-1200
+Norway	Oslo-7200
+Philippines	Borja-1200
+Poland	Pruszkow-1200
+Romania	Voluntari-1200
+Russia	Tsaritsyno-3600
+South Africa	Pietermaritzburg-7500
+South Korea	Songnae dong-1200
+Spain	Gava-3600
+Sweden	Malmo-3600
+Switzerland	Lausanne-7200
+Thailand	Ban Khlong Sip-3600
+The Bahamas	Killarney-1200
+Turkey	Tesvikiye-1200
+Ukraine	Irpin'-1200
+United Arab Emirates	Dubai-8400
+United Kingdom	London-30000
+United States	New York-15600

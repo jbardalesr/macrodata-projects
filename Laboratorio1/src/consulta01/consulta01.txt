@@ -1,0 +1,351 @@
+Amex--Kuwait	1
+Amex-AK-United States	1
+Amex-AZ-United States	2
+Amex-Alberta-Canada	2
+Amex-Bayern-Germany	1
+Amex-British Columbia-Canada	1
+Amex-Brittany-France	1
+Amex-Brussels (Bruxelles)-Belgium	2
+Amex-Buenos Aires-Argentina	1
+Amex-CA-United States	14
+Amex-CT-United States	3
+Amex-Catalonia-Spain	2
+Amex-DC-United States	1
+Amex-England-United Kingdom	5
+Amex-FL-United States	7
+Amex-GA-United States	8
+Amex-Geneve-Switzerland	1
+Amex-HI-United States	2
+Amex-Haryana-India	1
+Amex-Hessen-Germany	1
+Amex-IL-United States	1
+Amex-MA-United States	1
+Amex-MD-United States	2
+Amex-Moscow City-Russia	1
+Amex-Murcia-Spain	1
+Amex-NJ-United States	3
+Amex-NV-United States	3
+Amex-NY-United States	5
+Amex-New South Wales-Australia	1
+Amex-Noord-Brabant-Netherlands	1
+Amex-Noord-Holland-Netherlands	1
+Amex-OH-United States	1
+Amex-Ontario-Canada	1
+Amex-PA-United States	4
+Amex-Pays de la Loire-France	1
+Amex-Rhone-Alpes-France	1
+Amex-SC-United States	1
+Amex-Santa Catarina-Brazil	1
+Amex-Saskatchewan-Canada	1
+Amex-Stockholm-Sweden	3
+Amex-TX-United States	2
+Amex-Ticino-Switzerland	1
+Amex-Tokyo-Japan	1
+Amex-VA-United States	7
+Amex-VT-United States	2
+Amex-Veneto-Italy	1
+Amex-Victoria-Australia	1
+Amex-WA-United States	2
+Amex-Zug-Switzerland	1
+Amex-Zuid-Holland-Netherlands	1
+Diners--Jersey	1
+Diners-AZ-United States	1
+Diners-Abu Zaby-United Arab Emirates	1
+Diners-Alberta-Canada	1
+Diners-Andhra Pradesh-India	1
+Diners-Baden-Wurttemberg-Germany	1
+Diners-British Columbia-Canada	4
+Diners-Budapest-Hungary	1
+Diners-CA-United States	3
+Diners-CO-United States	1
+Diners-Cork-Ireland	3
+Diners-Distrito Nacional-Dominican Republic	1
+Diners-Dublin-Ireland	3
+Diners-England-United Kingdom	14
+Diners-FL-United States	2
+Diners-Franche-Comte-France	1
+Diners-GA-United States	3
+Diners-HI-United States	1
+Diners-Heredia-Costa Rica	1
+Diners-ID-United States	1
+Diners-Ile-de-France-France	1
+Diners-Kilkenny-Ireland	1
+Diners-Lorraine-France	1
+Diners-MN-United States	1
+Diners-Meath-Ireland	1
+Diners-NJ-United States	4
+Diners-NV-United States	1
+Diners-NY-United States	10
+Diners-New South Wales-Australia	1
+Diners-Nordrhein-Westfalen-Germany	1
+Diners-Northwest Territories-Canada	1
+Diners-Ontario-Canada	1
+Diners-Oslo-Norway	2
+Diners-Provence-Alpes-Cote d'Azur-France	1
+Diners-Quebec-Canada	2
+Diners-Saskatchewan-Canada	1
+Diners-Sicilia-Italy	3
+Diners-TN-United States	2
+Diners-TX-United States	2
+Diners-Thuringia-Germany	1
+Diners-Tuscany-Italy	1
+Diners-UT-United States	1
+Diners-Vaud-Switzerland	1
+Diners-WI-United States	1
+Diners-Western Australia-Australia	1
+Diners-Zuid-Holland-Netherlands	1
+Mastercard--Cayman Isls	1
+Mastercard--Hong Kong	1
+Mastercard-AK-United States	1
+Mastercard-AZ-United States	4
+Mastercard-Aargau-Switzerland	1
+Mastercard-Alberta-Canada	5
+Mastercard-Andalucia-Spain	1
+Mastercard-Bacs-Kiskun-Hungary	1
+Mastercard-Baden-Wurttemberg-Germany	2
+Mastercard-Basel-Country-Switzerland	1
+Mastercard-Bayern-Germany	1
+Mastercard-Berlin-Germany	1
+Mastercard-British Columbia-Canada	5
+Mastercard-Brussels (Bruxelles)-Belgium	1
+Mastercard-Bucuresti-Romania	1
+Mastercard-CA-United States	18
+Mastercard-CO-United States	4
+Mastercard-CT-United States	2
+Mastercard-Ceara-Brazil	1
+Mastercard-Cork-Ireland	1
+Mastercard-DC-United States	1
+Mastercard-DE-United States	1
+Mastercard-Dublin-Ireland	6
+Mastercard-England-United Kingdom	21
+Mastercard-Etela-Suomen Laani-Finland	1
+Mastercard-FL-United States	8
+Mastercard-GA-United States	3
+Mastercard-Gauteng-South Africa	2
+Mastercard-General Santos-Philippines	1
+Mastercard-Geneve-Switzerland	2
+Mastercard-Groningen-Netherlands	2
+Mastercard-HI-United States	3
+Mastercard-Hamburg-Germany	1
+Mastercard-Hessen-Germany	1
+Mastercard-IA-United States	2
+Mastercard-IL-United States	6
+Mastercard-IN-United States	1
+Mastercard-Ita-Suomen Laani-Finland	1
+Mastercard-KY-United States	2
+Mastercard-Kobenhavn-Denmark	5
+Mastercard-Krung Thep-Thailand	1
+Mastercard-Kuala Lumpur-Malaysia	1
+Mastercard-KwaZulu-Natal-South Africa	1
+Mastercard-LA-United States	2
+Mastercard-Lower Austria-Austria	1
+Mastercard-Lower Saxony-Germany	1
+Mastercard-MA-United States	4
+Mastercard-MD-United States	3
+Mastercard-ME-United States	2
+Mastercard-MI-United States	2
+Mastercard-MN-United States	3
+Mastercard-Madrid-Spain	2
+Mastercard-Manitoba-Canada	1
+Mastercard-Meath-Ireland	2
+Mastercard-Minas Gerais-Brazil	1
+Mastercard-NC-United States	2
+Mastercard-NE-United States	1
+Mastercard-NH-United States	1
+Mastercard-NJ-United States	6
+Mastercard-NY-United States	14
+Mastercard-New South Wales-Australia	4
+Mastercard-Noord-Holland-Netherlands	3
+Mastercard-Nordrhein-Westfalen-Germany	1
+Mastercard-Northern Ireland-United Kingdom	1
+Mastercard-OH-United States	3
+Mastercard-OR-United States	1
+Mastercard-Ontario-Canada	5
+Mastercard-PA-United States	1
+Mastercard-Provence-Alpes-Cote d'Azur-France	1
+Mastercard-Quebec-Canada	1
+Mastercard-Queensland-Australia	3
+Mastercard-Rhineland-Palatinate-Germany	1
+Mastercard-Rhone-Alpes-France	3
+Mastercard-Riga-Latvia	1
+Mastercard-Rogaland-Norway	3
+Mastercard-SC-United States	1
+Mastercard-Saarland-Germany	1
+Mastercard-Sao Paulo-Brazil	1
+Mastercard-Sardinia-Italy	1
+Mastercard-Saxony-Germany	1
+Mastercard-Scotland-United Kingdom	2
+Mastercard-St Gallen-Switzerland	1
+Mastercard-Stara Zagora-Bulgaria	1
+Mastercard-Stockholm-Sweden	3
+Mastercard-TN-United States	5
+Mastercard-TX-United States	14
+Mastercard-Tel Aviv-Israel	1
+Mastercard-Tuscany-Italy	1
+Mastercard-Tyrol-Austria	1
+Mastercard-Uppsala-Sweden	1
+Mastercard-Utrecht-Netherlands	1
+Mastercard-VA-United States	8
+Mastercard-Vaud-Switzerland	5
+Mastercard-Veneto-Italy	1
+Mastercard-Victoria-Australia	3
+Mastercard-Vienna-Austria	2
+Mastercard-WA-United States	2
+Mastercard-Western Australia-Australia	2
+Mastercard-Yukon Territory-Canada	1
+Mastercard-Zug-Switzerland	1
+Mastercard-Zuid-Holland-Netherlands	8
+Mastercard-Zurich-Switzerland	2
+Payment_Type-State-Country	1
+Visa--Iceland	1
+Visa--Malta	2
+Visa--Monaco	2
+Visa-AK-United States	3
+Visa-AL-United States	1
+Visa-AR-United States	3
+Visa-AZ-United States	3
+Visa-Aargau-Switzerland	1
+Visa-Al Manamah-Bahrain	1
+Visa-Alberta-Canada	10
+Visa-Alsace-France	1
+Visa-Antwerpen-Belgium	1
+Visa-Arhus-Denmark	1
+Visa-Attiki-Greece	1
+Visa-Auckland-New Zealand	4
+Visa-Baden-Wurttemberg-Germany	2
+Visa-Basel-Country-Switzerland	1
+Visa-Basel-Town-Switzerland	1
+Visa-Bayern-Germany	2
+Visa-Bern-Switzerland	1
+Visa-Black River-Mauritius	1
+Visa-Bohol-Philippines	1
+Visa-British Columbia-Canada	8
+Visa-Brittany-France	1
+Visa-Brussels (Bruxelles)-Belgium	3
+Visa-Buskerud-Norway	1
+Visa-CA-United States	31
+Visa-CO-United States	6
+Visa-CT-United States	4
+Visa-Catalonia-Spain	1
+Visa-Central Bohemia-Czech Republic	1
+Visa-Chisinau-Moldova	1
+Visa-Cork-Ireland	6
+Visa-DC-United States	1
+Visa-Dubayy-United Arab Emirates	5
+Visa-Dublin-Ireland	13
+Visa-East Bohemia-Czech Republic	1
+Visa-England-United Kingdom	46
+Visa-FL-United States	12
+Visa-Franche-Comte-France	1
+Visa-Frederiksborg-Denmark	3
+Visa-Freeport-The Bahamas	1
+Visa-GA-United States	7
+Visa-Gauteng-South Africa	1
+Visa-Gelderland-Netherlands	1
+Visa-Geneve-Switzerland	4
+Visa-Georgia-United States	1
+Visa-Guangdong-China	1
+Visa-Guatemala-Guatemala	1
+Visa-HI-United States	3
+Visa-Hainaut-Belgium	1
+Visa-Hamilton-Bermuda	1
+Visa-Hordaland-Norway	2
+Visa-IA-United States	1
+Visa-ID-United States	1
+Visa-IL-United States	9
+Visa-IN-United States	1
+Visa-Ile-de-France-France	7
+Visa-Istanbul-Turkey	5
+Visa-Izmir-Turkey	1
+Visa-KS-United States	2
+Visa-Kerry-Ireland	1
+Visa-Kiev-Ukraine	1
+Visa-Kobenhavn-Denmark	2
+Visa-KwaZulu-Natal-South Africa	1
+Visa-Lazio-Italy	1
+Visa-Limerick-Ireland	2
+Visa-Lombardy-Italy	4
+Visa-Louth-Ireland	1
+Visa-Lower Austria-Austria	1
+Visa-Lower Saxony-Germany	2
+Visa-Luxembourg-Luxembourg	1
+Visa-MA-United States	8
+Visa-MD-United States	10
+Visa-MI-United States	9
+Visa-MN-United States	6
+Visa-MO-United States	1
+Visa-MS-United States	2
+Visa-MT-United States	2
+Visa-Madrid-Spain	3
+Visa-Mayo-Ireland	1
+Visa-Mazowieckie-Poland	1
+Visa-Meath-Ireland	1
+Visa-Michigan-United States	1
+Visa-Murcia-Spain	1
+Visa-NC-United States	5
+Visa-NJ-United States	6
+Visa-NM-United States	1
+Visa-NV-United States	1
+Visa-NY-United States	12
+Visa-Neuchatel-Switzerland	1
+Visa-New Providence-The Bahamas	1
+Visa-New South Wales-Australia	5
+Visa-Noord-Holland-Netherlands	3
+Visa-Northern Ireland-United Kingdom	2
+Visa-OH-United States	3
+Visa-OR-United States	1
+Visa-Ontario-Canada	20
+Visa-Oslo-Norway	4
+Visa-Ostergotland-Sweden	1
+Visa-PA-United States	6
+Visa-Pais Vasco-Spain	1
+Visa-Pest-Hungary	1
+Visa-Phuket-Thailand	1
+Visa-Pomorskie-Poland	1
+Visa-Prague-Czech Republic	1
+Visa-Provence-Alpes-Cote d'Azur-France	2
+Visa-Quebec-Canada	5
+Visa-Queensland-Australia	7
+Visa-RI-United States	3
+Visa-Rhineland-Palatinate-Germany	2
+Visa-Rhone-Alpes-France	3
+Visa-Rio Grande do Sul-Brazil	1
+Visa-Rogaland-Norway	1
+Visa-SC-United States	2
+Visa-Schwyz-Switzerland	1
+Visa-Scotland-United Kingdom	7
+Visa-Skane-Sweden	1
+Visa-Sogn og Fjordane-Norway	1
+Visa-Soul-t'ukpyolsi-South Korea	1
+Visa-South Australia-Australia	1
+Visa-Staden Kobenhavn-Denmark	1
+Visa-Stockholm-Sweden	3
+Visa-Storstrom-Denmark	2
+Visa-TN-United States	4
+Visa-TX-United States	19
+Visa-Taranaki-New Zealand	2
+Visa-Tasmania-Australia	1
+Visa-Thuringia-Germany	1
+Visa-Ticino-Switzerland	1
+Visa-Tipperary-Ireland	2
+Visa-Tokyo-Japan	1
+Visa-Tuscany-Italy	2
+Visa-UT-United States	4
+Visa-Upper Normandy-France	1
+Visa-VA-United States	15
+Visa-VI-United States	1
+Visa-Vasterbotten-Sweden	1
+Visa-Vaud-Switzerland	2
+Visa-Vestfold-Norway	2
+Visa-Vestsjalland-Denmark	1
+Visa-Victoria-Australia	5
+Visa-Vienna-Austria	2
+Visa-Virginia-United States	1
+Visa-WA-United States	10
+Visa-WI-United States	4
+Visa-Wales-United Kingdom	2
+Visa-Waterford-Ireland	2
+Visa-Western Australia-Australia	3
+Visa-Westmeath-Ireland	1
+Visa-Wicklow-Ireland	2
+Visa-Zurich-Switzerland	6
