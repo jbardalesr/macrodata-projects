@@ -12,7 +12,7 @@ public class SalesCountryDriver {
 		JobConf job_conf = new JobConf(SalesCountryDriver.class);
 
 		// Set a name of the Job
-		job_conf.setJobName("SalePerCountry");
+		job_conf.setJobName("Count per hour");
 
 		// Specify data type of output key and value
 		job_conf.setOutputKeyClass(Text.class);
