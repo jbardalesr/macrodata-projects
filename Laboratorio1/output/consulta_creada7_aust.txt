@@ -1,0 +1,4 @@
+Australia	64800
+Austria	10800
+
+# hadoop jar ConsultaCr7.jar SalesCountry.SalesCountryDriver /input1 /output15 aust
