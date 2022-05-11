@@ -1,21 +1,21 @@
-MastercardAustralia	12
-AmexBelgium	2
-DinersCanada	10
-MastercardCanada	18
-DinersFrance	4
-MastercardFrance	4
-VisaGermany	9
-DinersGermany	3
-MastercardIreland	9
-DinersItaly	4
-MastercardItaly	3
-AmexNetherlands	3
-VisaNetherlands	4
-MastercardNorway	3
-MastercardSweden	4
-AmexSwitzerland	3
-MastercardSwitzerland	13
-DinersUnited Kingdom	14
-MastercardUnited Kingdom	24
-AmexUnited States	72
-MastercardUnited States	131
+Mastercard-Australia	12
+Amex-Belgium	2
+Diners-Canada	10
+Mastercard-Canada	18
+Diners-France	4
+Mastercard-France	4
+Visa-Germany	9
+Diners-Germany	3
+Mastercard-Ireland	9
+Diners-Italy	4
+Mastercard-Italy	3
+Amex-Netherlands	3
+Visa-Netherlands	4
+Mastercard-Norway	3
+Mastercard-Sweden	4
+Amex-Switzerland	3
+Mastercard-Switzerland	13
+Diners-United Kingdom	14
+Mastercard-United Kingdom	24
+Amex-United States	72
+Mastercard-United States	131

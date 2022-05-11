@@ -1,4 +1,3 @@
-Amex--Kuwait	1
 Amex-AK-United States	1
 Amex-AZ-United States	2
 Amex-Alberta-Canada	2
@@ -24,6 +23,7 @@ Amex-MD-United States	2
 Amex-Moscow City-Russia	1
 Amex-Murcia-Spain	1
 Amex-NJ-United States	3
+Amex-NT_Kuwait-Kuwait	1
 Amex-NV-United States	3
 Amex-NY-United States	5
 Amex-New South Wales-Australia	1
@@ -48,7 +48,6 @@ Amex-Victoria-Australia	1
 Amex-WA-United States	2
 Amex-Zug-Switzerland	1
 Amex-Zuid-Holland-Netherlands	1
-Diners--Jersey	1
 Diners-AZ-United States	1
 Diners-Abu Zaby-United Arab Emirates	1
 Diners-Alberta-Canada	1
@@ -74,6 +73,7 @@ Diners-Lorraine-France	1
 Diners-MN-United States	1
 Diners-Meath-Ireland	1
 Diners-NJ-United States	4
+Diners-NT_Jersey-Jersey	1
 Diners-NV-United States	1
 Diners-NY-United States	10
 Diners-New South Wales-Australia	1
@@ -94,8 +94,6 @@ Diners-Vaud-Switzerland	1
 Diners-WI-United States	1
 Diners-Western Australia-Australia	1
 Diners-Zuid-Holland-Netherlands	1
-Mastercard--Cayman Isls	1
-Mastercard--Hong Kong	1
 Mastercard-AK-United States	1
 Mastercard-AZ-United States	4
 Mastercard-Aargau-Switzerland	1
@@ -153,6 +151,8 @@ Mastercard-NC-United States	2
 Mastercard-NE-United States	1
 Mastercard-NH-United States	1
 Mastercard-NJ-United States	6
+Mastercard-NT_Cayman-Cayman Isls	1
+Mastercard-NT_China-China	1
 Mastercard-NY-United States	14
 Mastercard-New South Wales-Australia	4
 Mastercard-Noord-Holland-Netherlands	3
@@ -197,9 +197,6 @@ Mastercard-Zug-Switzerland	1
 Mastercard-Zuid-Holland-Netherlands	8
 Mastercard-Zurich-Switzerland	2
 Payment_Type-State-Country	1
-Visa--Iceland	1
-Visa--Malta	2
-Visa--Monaco	2
 Visa-AK-United States	3
 Visa-AL-United States	1
 Visa-AR-United States	3
@@ -285,6 +282,9 @@ Visa-Murcia-Spain	1
 Visa-NC-United States	5
 Visa-NJ-United States	6
 Visa-NM-United States	1
+Visa-NT_Iceland-Iceland	1
+Visa-NT_Malta-Malta	2
+Visa-NT_Monaco-Monaco	2
 Visa-NV-United States	1
 Visa-NY-United States	12
 Visa-Neuchatel-Switzerland	1
