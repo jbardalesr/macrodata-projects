@@ -1,0 +1,27 @@
+Australia-Product1	10800.0
+Australia-Product2	14400.0
+Brazil-Product1	1200.0
+Canada-Product1	22800.0
+Canada-Product2	10800.0
+Cayman Isls-Product1	1200.0
+China-Product1	1200.0
+France-Product1	1200.0
+Germany-Product2	3600.0
+Guatemala-Product1	1200.0
+Ireland-Product1	1200.0
+Japan-Product1	1200.0
+Malaysia-Product1	1200.0
+Netherlands-Product2	3600.0
+New Zealand-Product1	2400.0
+Russia-Product2	3600.0
+Sweden-Product1	1200.0
+Switzerland-Product1	3600.0
+Thailand-Product1	1200.0
+Thailand-Product2	3600.0
+The Bahamas-Product1	1200.0
+Turkey-Product1	1200.0
+United Arab Emirates-Product1	1200.0
+United Arab Emirates-Product2	3600.0
+United Kingdom-Product1	1200.0
+United States-Product1	98500.0
+United States-Product2	36000.0

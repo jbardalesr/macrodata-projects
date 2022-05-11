@@ -1,0 +1,105 @@
+Argentina, Amex	1200.0
+Australia, Amex	1200.0
+Australia, Diners	2400.0
+Australia, Mastercard	1800.0
+Australia, Visa	1636.3636
+Austria, Mastercard	1800.0
+Austria, Visa	1200.0
+Bahrain, Visa	1200.0
+Belgium, Amex	1200.0
+Belgium, Mastercard	1200.0
+Belgium, Visa	1680.0
+Bermuda, Visa	1200.0
+Brazil, Amex	1200.0
+Brazil, Mastercard	3300.0
+Brazil, Visa	1200.0
+Bulgaria, Mastercard	1200.0
+Canada, Amex	2160.0
+Canada, Diners	1440.0
+Canada, Mastercard	1866.6666
+Canada, Visa	1534.8837
+Cayman Isls, Mastercard	1200.0
+China, Visa	1200.0
+Costa Rica, Diners	1200.0
+Czech Republic, Visa	2000.0
+Denmark, Mastercard	1200.0
+Denmark, Visa	1200.0
+Dominican Republic, Diners	1200.0
+Finland, Mastercard	1200.0
+France, Amex	2000.0
+France, Diners	1200.0
+France, Mastercard	2400.0
+France, Visa	2043.75
+Germany, Amex	2400.0
+Germany, Diners	1200.0
+Germany, Mastercard	1636.3636
+Germany, Visa	1733.3334
+Greece, Visa	1200.0
+Guatemala, Visa	1200.0
+Hong Kong, Mastercard	1200.0
+Hungary, Diners	1200.0
+Hungary, Mastercard	1200.0
+Hungary, Visa	1200.0
+Iceland, Visa	1200.0
+India, Amex	1200.0
+India, Diners	1200.0
+Ireland, Diners	1500.0
+Ireland, Mastercard	1900.0
+Ireland, Visa	1275.0
+Israel, Mastercard	1200.0
+Italy, Amex	3600.0
+Italy, Diners	4350.0
+Italy, Mastercard	2000.0
+Italy, Visa	1542.8572
+Japan, Amex	1200.0
+Japan, Visa	1200.0
+Jersey, Diners	1200.0
+Kuwait, Amex	1200.0
+Latvia, Mastercard	1200.0
+Luxembourg, Visa	1200.0
+Malaysia, Mastercard	1200.0
+Malta, Visa	2400.0
+Mauritius, Visa	3600.0
+Moldova, Visa	1200.0
+Monaco, Visa	1200.0
+Netherlands, Amex	1200.0
+Netherlands, Diners	1200.0
+Netherlands, Mastercard	2164.2856
+Netherlands, Visa	2400.0
+New Zealand, Visa	1200.0
+Norway, Diners	1200.0
+Norway, Mastercard	1200.0
+Norway, Visa	1418.1818
+Philippines, Mastercard	1200.0
+Philippines, Visa	1200.0
+Poland, Visa	1200.0
+Romania, Mastercard	1200.0
+Russia, Amex	3600.0
+South Africa, Mastercard	1200.0
+South Africa, Visa	4350.0
+South Korea, Visa	1200.0
+Spain, Amex	2000.0
+Spain, Mastercard	1200.0
+Spain, Visa	1200.0
+Sweden, Amex	2000.0
+Sweden, Mastercard	1200.0
+Sweden, Visa	2000.0
+Switzerland, Amex	2000.0
+Switzerland, Diners	1200.0
+Switzerland, Mastercard	2123.077
+Switzerland, Visa	2210.5264
+Thailand, Mastercard	3600.0
+Thailand, Visa	1200.0
+The Bahamas, Visa	1200.0
+Turkey, Visa	1200.0
+Ukraine, Visa	1200.0
+United Arab Emirates, Diners	1200.0
+United Arab Emirates, Visa	2160.0
+United Kingdom, Amex	1200.0
+United Kingdom, Diners	1371.4286
+United Kingdom, Mastercard	1400.0
+United Kingdom, Visa	1494.7368
+United States, Amex	1690.2778
+United States, Diners	1341.1765
+United States, Mastercard	1559.9237
+United States, Visa	1622.3451
