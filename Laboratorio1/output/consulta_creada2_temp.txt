@@ -1,0 +1,348 @@
+Day 1, Australia	2400
+Day 1, Canada	3600
+Day 1, Denmark	1200
+Day 1, Germany	4800
+Day 1, Ireland	1200
+Day 1, Italy	1200
+Day 1, Malta	3600
+Day 1, Netherlands	2400
+Day 1, Norway	1200
+Day 1, Switzerland	3600
+Day 1, United Kingdom	3600
+Day 1, United States	17100
+Day 10, Canada	3600
+Day 10, Germany	3600
+Day 10, Ireland	3600
+Day 10, Jersey	1200
+Day 10, Norway	1200
+Day 10, United Arab Emirates	1200
+Day 10, United Kingdom	2400
+Day 10, United States	27600
+Day 11, Australia	4800
+Day 11, Belgium	1200
+Day 11, Canada	1200
+Day 11, Germany	2400
+Day 11, Ireland	6000
+Day 11, Netherlands	1200
+Day 11, Norway	2400
+Day 11, Ukraine	1200
+Day 11, United Kingdom	8400
+Day 11, United States	30300
+Day 12, Australia	2400
+Day 12, Bahrain	1200
+Day 12, Canada	7200
+Day 12, Denmark	1200
+Day 12, France	1200
+Day 12, Germany	2400
+Day 12, Guatemala	1200
+Day 12, Iceland	1200
+Day 12, Italy	3600
+Day 12, Luxembourg	1200
+Day 12, Netherlands	7500
+Day 12, Spain	2400
+Day 12, Sweden	3600
+Day 12, Switzerland	4800
+Day 12, United Kingdom	2400
+Day 12, United States	30000
+Day 13, Canada	8400
+Day 13, Denmark	2400
+Day 13, France	3600
+Day 13, Germany	1200
+Day 13, Ireland	2400
+Day 13, Italy	1200
+Day 13, Norway	1200
+Day 13, South Africa	1200
+Day 13, Spain	1200
+Day 13, Switzerland	4800
+Day 13, United Kingdom	3600
+Day 13, United States	21600
+Day 14, Australia	4800
+Day 14, Brazil	7500
+Day 14, Canada	3600
+Day 14, France	3600
+Day 14, Ireland	2400
+Day 14, Spain	1200
+Day 14, Switzerland	4800
+Day 14, United Arab Emirates	1200
+Day 14, United Kingdom	3600
+Day 14, United States	15600
+Day 15, Canada	8400
+Day 15, France	2400
+Day 15, Netherlands	1200
+Day 15, Norway	1200
+Day 15, The Bahamas	1200
+Day 15, United Kingdom	7200
+Day 15, United States	35100
+Day 16, Australia	1200
+Day 16, Austria	1200
+Day 16, Denmark	1200
+Day 16, France	4800
+Day 16, Germany	2400
+Day 16, Ireland	3600
+Day 16, Italy	1200
+Day 16, Netherlands	1200
+Day 16, South Africa	2400
+Day 16, Switzerland	3600
+Day 16, United Kingdom	1200
+Day 16, United States	18000
+Day 17, Brazil	1200
+Day 17, Canada	1200
+Day 17, Ireland	1200
+Day 17, Italy	16200
+Day 17, Kuwait	1200
+Day 17, Netherlands	2400
+Day 17, New Zealand	1200
+Day 17, Philippines	1200
+Day 17, United Arab Emirates	4800
+Day 17, United Kingdom	1200
+Day 17, United States	13200
+Day 18, Australia	1200
+Day 18, Brazil	1200
+Day 18, Germany	3600
+Day 18, Ireland	12300
+Day 18, Italy	1200
+Day 18, Netherlands	3600
+Day 18, Spain	3600
+Day 18, Switzerland	1200
+Day 18, United Kingdom	7200
+Day 18, United States	45600
+Day 19, Australia	1200
+Day 19, Belgium	1200
+Day 19, Bulgaria	1200
+Day 19, Costa Rica	1200
+Day 19, France	1200
+Day 19, Germany	1200
+Day 19, Ireland	2400
+Day 19, Italy	3600
+Day 19, Japan	1200
+Day 19, Netherlands	3600
+Day 19, Norway	1200
+Day 19, Sweden	1200
+Day 19, United Kingdom	8400
+Day 19, United States	20400
+Day 2, Australia	8400
+Day 2, Canada	4800
+Day 2, Denmark	1200
+Day 2, Finland	1200
+Day 2, France	1200
+Day 2, Hungary	1200
+Day 2, Ireland	3600
+Day 2, Norway	1200
+Day 2, Spain	1200
+Day 2, Turkey	1200
+Day 2, United Kingdom	12000
+Day 2, United States	20400
+Day 20, Australia	2400
+Day 20, Canada	8400
+Day 20, Dominican Republic	1200
+Day 20, Hungary	1200
+Day 20, Sweden	3600
+Day 20, United Arab Emirates	1200
+Day 20, United Kingdom	7200
+Day 20, United States	26700
+Day 21, Austria	1200
+Day 21, Canada	1200
+Day 21, Cayman Isls	1200
+Day 21, China	1200
+Day 21, Czech Republic	1200
+Day 21, Denmark	1200
+Day 21, France	1200
+Day 21, Ireland	1200
+Day 21, Italy	1200
+Day 21, Netherlands	1200
+Day 21, Norway	1200
+Day 21, Switzerland	6000
+Day 21, Turkey	1200
+Day 21, United Kingdom	2400
+Day 21, United States	21200
+Day 22, Australia	1200
+Day 22, Canada	4800
+Day 22, France	2400
+Day 22, Ireland	2400
+Day 22, Monaco	1200
+Day 22, Netherlands	3600
+Day 22, Norway	1200
+Day 22, Romania	1200
+Day 22, Turkey	1200
+Day 22, United Kingdom	9600
+Day 22, United States	26700
+Day 23, Australia	6000
+Day 23, Bermuda	1200
+Day 23, Canada	1200
+Day 23, Hungary	1200
+Day 23, Ireland	2400
+Day 23, Malaysia	1200
+Day 23, Netherlands	2400
+Day 23, New Zealand	1200
+Day 23, Spain	1200
+Day 23, Sweden	3600
+Day 23, Switzerland	1200
+Day 23, United States	27000
+Day 24, Australia	2400
+Day 24, Austria	2400
+Day 24, Belgium	1200
+Day 24, Brazil	1200
+Day 24, Canada	3600
+Day 24, Denmark	1200
+Day 24, Italy	1200
+Day 24, Philippines	1200
+Day 24, Spain	1200
+Day 24, Switzerland	4800
+Day 24, Thailand	1200
+Day 24, United Kingdom	10800
+Day 24, United States	14400
+Day 25, Argentina	1200
+Day 25, Austria	3600
+Day 25, Brazil	1200
+Day 25, Canada	2400
+Day 25, Italy	1200
+Day 25, Netherlands	1200
+Day 25, Norway	3600
+Day 25, South Africa	7500
+Day 25, Sweden	1200
+Day 25, Switzerland	4800
+Day 25, United Arab Emirates	3600
+Day 25, United Kingdom	3600
+Day 25, United States	46200
+Day 26, Australia	1200
+Day 26, Belgium	3600
+Day 26, Canada	2400
+Day 26, Finland	1200
+Day 26, France	4800
+Day 26, Ireland	2400
+Day 26, Japan	1200
+Day 26, Russia	3600
+Day 26, Spain	1200
+Day 26, Switzerland	2400
+Day 26, United Kingdom	2400
+Day 26, United States	25250
+Day 27, France	1200
+Day 27, Ireland	2400
+Day 27, Netherlands	1200
+Day 27, Spain	2400
+Day 27, Sweden	1200
+Day 27, Switzerland	4800
+Day 27, The Bahamas	1200
+Day 27, United Kingdom	4800
+Day 27, United States	18000
+Day 28, Canada	9600
+Day 28, France	1200
+Day 28, Germany	1200
+Day 28, Greece	1200
+Day 28, Mauritius	3600
+Day 28, New Zealand	1200
+Day 28, Norway	1200
+Day 28, Poland	1200
+Day 28, Sweden	1200
+Day 28, Switzerland	1200
+Day 28, United Kingdom	2400
+Day 28, United States	13300
+Day 29, Canada	1200
+Day 29, Czech Republic	3600
+Day 29, Denmark	1200
+Day 29, France	2400
+Day 29, Germany	2400
+Day 29, Ireland	2400
+Day 29, New Zealand	1200
+Day 29, Switzerland	1200
+Day 29, United Kingdom	1200
+Day 29, United States	22800
+Day 3, Australia	4800
+Day 3, Canada	2400
+Day 3, Denmark	3600
+Day 3, Ireland	1200
+Day 3, Sweden	3600
+Day 3, Switzerland	1200
+Day 3, Turkey	1200
+Day 3, United Kingdom	1200
+Day 3, United States	18000
+Day 30, Australia	1200
+Day 30, Belgium	1200
+Day 30, Canada	3600
+Day 30, Hong Kong	1200
+Day 30, Ireland	2400
+Day 30, Netherlands	3600
+Day 30, Switzerland	6000
+Day 30, United Kingdom	1200
+Day 30, United States	11050
+Day 31, Australia	1200
+Day 31, Canada	1200
+Day 31, Italy	1200
+Day 31, Sweden	2400
+Day 31, United Kingdom	3600
+Day 31, United States	14400
+Day 4, Australia	4800
+Day 4, Canada	14400
+Day 4, Czech Republic	1200
+Day 4, France	1200
+Day 4, Germany	4800
+Day 4, Ireland	2400
+Day 4, Israel	1200
+Day 4, Netherlands	1200
+Day 4, South Korea	1200
+Day 4, United Kingdom	6000
+Day 4, United States	18000
+Day 5, Australia	3600
+Day 5, Austria	1200
+Day 5, Canada	4800
+Day 5, Denmark	2400
+Day 5, France	9900
+Day 5, Germany	3600
+Day 5, India	1200
+Day 5, Ireland	2400
+Day 5, Italy	1200
+Day 5, Netherlands	2400
+Day 5, South Africa	1200
+Day 5, Sweden	1200
+Day 5, Switzerland	4800
+Day 5, United Kingdom	6000
+Day 5, United States	26400
+Day 6, Australia	2400
+Day 6, Austria	1200
+Day 6, Belgium	2400
+Day 6, Canada	7200
+Day 6, Denmark	1200
+Day 6, India	1200
+Day 6, Ireland	1200
+Day 6, Moldova	1200
+Day 6, Netherlands	4800
+Day 6, Norway	1200
+Day 6, United Kingdom	6000
+Day 6, United States	42000
+Day 7, Australia	4800
+Day 7, Belgium	1200
+Day 7, Canada	4800
+Day 7, France	3600
+Day 7, Germany	3600
+Day 7, Ireland	4800
+Day 7, Italy	3600
+Day 7, Latvia	1200
+Day 7, Malta	1200
+Day 7, New Zealand	1200
+Day 7, Norway	1200
+Day 7, Switzerland	7200
+Day 7, Turkey	1200
+Day 7, United Kingdom	3600
+Day 7, United States	36000
+Day 8, Australia	1200
+Day 8, Canada	7200
+Day 8, France	1200
+Day 8, Germany	4800
+Day 8, Ireland	1200
+Day 8, Monaco	1200
+Day 8, New Zealand	1200
+Day 8, Norway	1200
+Day 8, Poland	1200
+Day 8, Switzerland	8400
+Day 8, Thailand	3600
+Day 8, Turkey	1200
+Day 8, United Kingdom	6000
+Day 8, United States	19200
+Day 9, Australia	1200
+Day 9, Canada	2400
+Day 9, France	6000
+Day 9, Ireland	2400
+Day 9, Norway	1200
+Day 9, Spain	1200
+Day 9, United Kingdom	4800
+Day 9, United States	16800

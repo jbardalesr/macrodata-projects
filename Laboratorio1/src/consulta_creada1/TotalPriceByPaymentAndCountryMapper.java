@@ -22,6 +22,6 @@ public class TotalPriceByPaymentAndCountryMapper extends MapReduceBase implement
         } else {
             price = new IntWritable(0);
         }
-        output.collect(new Text(SingleCountryData[7] + "-" + SingleCountryData[3]), price);
+        output.collect(new Text(SingleCountryData[7] + ", " + SingleCountryData[3]), price);
     }
 }

@@ -18,7 +18,7 @@ public class TotalPriceByPaymentAndCountry {
         JobConf job_conf = new JobConf(TotalPriceByPaymentAndCountry.class);
 
         // Set a name of the Job
-        job_conf.setJobName("SalePerCountry");
+        job_conf.setJobName("TotalPriceByPaymentAndCountry");
 
         // Specify data type of output key and value
         job_conf.setOutputKeyClass(Text.class);
