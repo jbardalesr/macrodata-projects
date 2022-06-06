@@ -1,0 +1,7 @@
+College	Less than $40K freq: 228
+Doctorate	Less than $40K freq: 109
+Graduate	Less than $40K freq: 787
+High School	Less than $40K freq: 458
+Post-Graduate	Less than $40K freq: 127
+Uneducated	Less than $40K freq: 371
+Unknown	Less than $40K freq: 379
