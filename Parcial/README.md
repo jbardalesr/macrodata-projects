@@ -2,9 +2,13 @@
 ### Virtual Box Configuration
 1. Install Ubuntu Server on a Virtual Machine for `Master` and clone this for nodes `Worker`.
 2.  In network configuration of the `Master` VM set two adapters NAT and Internal Network. In NAT expand advanced options and select Port Forwarding. Add two rules for the connection with admin-panel of Hadoop
-![Port Forwading Rules](port_rules.png)
+
+![Port Forwading Rules](port_rules1.png)
+
 3. Adition for connection with SSH from PowerShell
+
 ![Port Forwading Rules](port_rules2.png)
+
 `> ssh username_ubuntu@localhost`
 
 ### Ubuntu Configuration
@@ -82,7 +86,7 @@
         </property>
         <property>
                 <name>yarn.nodemanager.env-whitelist</name>
-                <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PERPEND_DISTCACHE,HADOOP>        </property>
+                <value>JAVA_HOME,HADOOP_COMMON_HOME,HADOOP_HDFS_HOME,HADOOP_CONF_DIR,CLASSPATH_PERPEND_DISTCACHE,HADOOP></property>
         <property>
                 <name>yarn.resourcemanager.resource-tracker.address</name>
                 <value>master:8025</value>
