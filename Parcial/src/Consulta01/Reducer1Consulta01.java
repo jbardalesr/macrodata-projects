@@ -37,6 +37,6 @@ class Reducer2Consulta02 extends MapReduceBase implements Reducer<Text, Text, Te
                 tipoTarjeta = vals[0];
             }
         }
-        output.collect(key, new Text(tipoTarjeta +" Tipo de tarjeta más común: "+ Integer.toString(max)));
+        output.collect(key, new Text(" Tipo de tarjeta más común: "+ tipoTarjeta + " freq: " + Integer.toString(max)));
     }
 }

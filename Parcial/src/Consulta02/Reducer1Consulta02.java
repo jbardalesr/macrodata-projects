@@ -37,6 +37,6 @@ class Reducer2Consulta02 extends MapReduceBase implements Reducer<Text, Text, Te
                 bestIncome = vals[0];
             }
         }
-        output.collect(key, new Text(bestIncome + " freq: " + Integer.toString(max)));
+        output.collect(key, new Text("Income: " + bestIncome + " freq: " + Integer.toString(max)));
     }
 }

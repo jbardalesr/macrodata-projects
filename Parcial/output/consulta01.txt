@@ -1,2 +1,2 @@
-F	Blue Tipo de tarjeta más común: 3526
-M	Blue Tipo de tarjeta más común: 3228
+F	 Tipo de tarjeta más común: Blue freq: 3226
+M	 Tipo de tarjeta más común: Blue freq: 3372
