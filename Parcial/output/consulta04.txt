@@ -1,0 +1,2 @@
+Attrition_Flag: Attrited Customer	 -> Female , Married frequency:  275
+Attrition_Flag: Existing Customer	 -> Male , Married frequency:  1643
