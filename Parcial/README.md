@@ -24,6 +24,7 @@
     ```
 3. Edit file `sudo cat /etc/netplan/00-installer-config.yaml`
     ```
+    # File 00-installer-config.yaml 
     network:
         ethernets:
             enp0s3:
@@ -32,6 +33,7 @@
                 dhcp4: false
                 addresses:
                     - 192.168.0.3/24
+    $ sudo netplan apply
     ```
 ### Hadoop Cluster Configuration
 1. Edit core-site.xml file `sudo nano $HADOOP_HOME/etc/hadoop/core-site.xml`
