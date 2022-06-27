@@ -1,0 +1,25 @@
+### Salida Spark Scala ### 
+
+ataque?: 0 - casado?:No  pacientes:1727
+ataque?: 0 - casado?:Yes  pacientes:3133
+ataque?: 1 - casado?:No  pacientes:29
+ataque?: 1 - casado?:Yes  pacientes:220
+
+### Salida adicional ### 
+
+ataque?: 0 - casado?:Yes porcentaje:93.438705
+ataque?: 1 - casado?:Yes porcentaje:6.5612884
+
+ataque?: 0 - casado?:No porcentaje:98.348526
+ataque?: 1 - casado?:No porcentaje:1.6514806
+
+### Salida Spark SQL ###
+
++------------+------+---------+
+|ever_married|stroke|pacientes|
++------------+------+---------+
+|          No|     0|     1727|
+|         Yes|     0|     3133|
+|         Yes|     1|      220|
+|          No|     1|       29|
++------------+------+---------+

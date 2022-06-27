@@ -1,0 +1,25 @@
+### Salida Spark Scala ### 
+
+Ciclo de vida: Adulto pacientes: 66
+Ciclo de vida: Infante pacientes: 1
+Ciclo de vida: Adolescente pacientes: 1
+Ciclo de vida: Adulto Mayor pacientes: 181
+
+### Salida adicional ### 
+
+Ciclo de vida: Adulto porcentaje:26.506025
+Ciclo de vida: Infante porcentaje:0.4016064
+Ciclo de vida: Adolescente porcentaje:0.4016064
+Ciclo de vida: Adulto Mayor porcentaje:72.69076
+
+### Salida Spark SQL ###
+
++---------+-------------+
+|pacientes|        ciclo|
++---------+-------------+
+|        1|     infantes|
+|        1| adolescentes|
+|        0|      jovenes|
+|       66|      adultos|
+|      181|adultos mayor|
++---------+-------------+
