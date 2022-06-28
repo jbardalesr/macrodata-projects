@@ -16,8 +16,7 @@ data.show(10, false)
 
 // COMMAND ----------
 
-// MAGIC %md
-// MAGIC Se elimina el valor "Other" del campo gender
+display(data.describe("age", "hypertension", "heart_disease", "avg_glucose_level", "bmi", "stroke"))
 
 // COMMAND ----------
 
@@ -25,6 +24,11 @@ import org.apache.spark.sql.functions.{expr, col, column, round}
 
 // mostrar los valores distintos para gender
 data.select("gender").distinct().show()
+
+// COMMAND ----------
+
+val other = data.filter("gender == 'Other'")
+other.show()
 
 // COMMAND ----------
 
@@ -42,9 +46,9 @@ case class stroke(id: Integer, gender: String, age: Double,
 
 // COMMAND ----------
 
-// import org.apache.spark.sql.functions.map
 // edades pasar a entero
 val data_stroke = data_gender.as[stroke]
+
 val data_map = data_stroke.map(row =>{
   val ageInt = row.age.toInt
   (row.id, row.gender, ageInt, row.hypertension,
