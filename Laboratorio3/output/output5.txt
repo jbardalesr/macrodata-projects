@@ -1,0 +1,15 @@
+
+Clasificacion BMI : Sobrepeso porcentaje:32.93173
+Clasificacion BMI : Obesidad porcentaje:46.98795
+Clasificacion BMI : Normal porcentaje:19.678715
+Clasificacion BMI : Debajo porcentaje:0.4016064
+
+
++-------------------+---------+
+|         porcentaje|   clasif|
++-------------------+---------+
+|0.40160642570281124|   debajo|
+|  19.67871485943775|   normal|
+|  32.93172690763052|sobrepeso|
+|  46.98795180722892| obesidad|
++-------------------+---------+
