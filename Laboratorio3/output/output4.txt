@@ -1,6 +1,15 @@
-# part-00000
-(Govt_job,65.78571)
-(Self-employed,71.20755)
-# part-00001
-(Private,67.10236)
-(children,14.0)
+### Salida Spark Scala ### 
+Self-employed   71.20755
+Private         67.10236
+children        14.0
+Govt_job        65.78571
+
+### Salida Spark SQL ###
++-------------+-----------------+
+| tipo_trabajo|    edad_promedio|
++-------------+-----------------+
+|Self-employed|71.20754716981132|
+|      Private|67.10236220472441|
+|     children|             14.0|
+|     Govt_job|65.78571428571429|
++-------------+-----------------+

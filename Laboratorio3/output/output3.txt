@@ -1,6 +1,15 @@
-# part-00000
-(Urban-0,2381)
-(Rural-0,2318)
-# part-00001
-(Urban-1,109)
-(Rural-1,100)
+### Salida Spark Scala ### 
+Urban-1 109
+Rural-1 100
+Urban-0 2381
+Rural-0 2318
+
+### Salida Spark SQL ###
++--------------+------+------------+
+|Residence_type|stroke|count_stroke|
++--------------+------+------------+
+|         Urban|     1|         109|
+|         Rural|     1|         100|
+|         Urban|     0|        2381|
+|         Rural|     0|        2318|
++--------------+------+------------+
