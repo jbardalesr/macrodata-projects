@@ -35,7 +35,7 @@ class Mapper2Consulta03 extends MapReduceBase implements Mapper<LongWritable, Te
         String attritionFlag = features[0];
         String age  = features[1];
         
-        //  ((Attrition_Flag,Customer_Age) , (count, Mean(Months_on_Book) ))
+        //  ((Attrition_Flag),(Customer_Age, count, Mean(Months_on_Book) ))
 
             output.collect(new Text(attritionFlag), new Text(age + "," +rowData[1]));
         
