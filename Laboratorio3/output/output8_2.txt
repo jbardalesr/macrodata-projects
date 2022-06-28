@@ -1,0 +1,10 @@
+stroke,work_type,avg_age
+0,Govt_job,49.8
+0,Never_worked,15.6
+0,Private,44
+0,children,6.9
+0,Self-employed,59.4
+1,children,14
+1,Govt_job,65.8
+1,Self-employed,72.4
+1,Private,66.5

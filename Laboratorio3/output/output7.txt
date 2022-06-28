@@ -1,0 +1,13 @@
+work_type,smoking_status,count
+Private,Unknown,15
+Private,formerly smoked,15
+Private,never smoked,13
+Self-employed,never smoked,13
+Private,smokes,11
+Self-employed,formerly smoked,5
+Govt_job,Unknown,4
+Self-employed,smokes,3
+Govt_job,smokes,2
+Govt_job,never smoked,2
+Self-employed,Unknown,1
+Govt_job,formerly smoked,1
