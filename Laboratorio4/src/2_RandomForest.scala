@@ -110,15 +110,14 @@ val featureCols = Array("gender", "age", "age_range", "hypertension","heart_dise
 // transformers
 val assembler = new VectorAssembler().setInputCols(featureCols).setOutputCol("features") 
 val labelIndexer = new StringIndexer().setInputCol("stroke").setOutputCol("label")
-
 // estimator
 val classifier = new RandomForestClassifier().setImpurity("gini").setMaxDepth(30).setNumTrees(30).setFeatureSubsetStrategy("auto").setSeed(1234567).setMaxBins(40).setMinInfoGain(0.001)
-
+// pipeline
 val pipeline = new Pipeline().setStages(Array(assembler, labelIndexer, classifier))
-
+// test-train
 val splitSeed = 5043
 val Array(trainingData, testData) = patientDF.randomSplit(Array(0.80, 0.20), splitSeed)
-
+// model
 val model = pipeline.fit(trainingData)
 val predictions = model.transform(testData)
 predictions.show
@@ -144,6 +143,5 @@ def printlnMetric(metricName: String): Double = {
 }
 println("Area Under ROC before tuning: " + printlnMetric("areaUnderROC"))
 // Area Under ROC before tuning: 0.8479956466533648
-
 println("Area Under PRC before tuning: "+ printlnMetric("areaUnderPR"))
 // Area Under PRC before tuning: 0.6318387796865091
