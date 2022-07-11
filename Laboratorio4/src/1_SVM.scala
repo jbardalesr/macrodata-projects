@@ -85,7 +85,7 @@ val predictions = model.transform(testData)
 
 // ============ Evaluación =============
 
-val predictionAndLabels =  predictions.select("prediction","label").rdd.map( l => (l(0),l(1)) )
+val predictionAndLabels =  predictions.select("prediction","label").rdd.map( l => (l(1),l(0)) )
 
 val metrics = new MulticlassMetrics(predictionAndLabels)
 
@@ -127,7 +127,7 @@ val cv = new CrossValidator()
 val cvModel = cv.fit(trainingData)
 val pred = cvModel.transform(testData)
 
-val predAndLabels =  pred.select("prediction","label").rdd.map( l => (l(0),l(1)) )
+val predAndLabels =  pred.select("prediction","label").rdd.map( l => (l(1),l(0)) )
 
 val metrics = new MulticlassMetrics(predAndLabels)
 
