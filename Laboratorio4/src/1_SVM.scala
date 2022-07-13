@@ -94,11 +94,28 @@ println("Confusion matrix:")
 println(metrics.confusionMatrix)
 
 
-val precision = metrics.precision(_)
-val recall = metrics.recall(_)
-val accuracy = metrics.accuracy
-val a = 0.0
-println(s"Precision: ${precision(a)} Recall: ${recall(a)} Accuracy: ${accuracy}")
+val labels = metrics.labels
+labels.foreach { l =>
+  println(s"Precision($l) = " + metrics.precision(l))
+}
+//Precision(0.0) = 0.9530201342281879
+//Precision(1.0) = 0.2702702702702703
+
+labels.foreach { l =>
+  println(s"Recall($l) = " + metrics.recall(l))
+}
+//Recall(0.0) = 0.8402366863905325
+//Recall(1.0) = 0.5882352941176471
+
+println("Accuracy " + metrics.accuracy)
+//Accuracy 0.8172043010752689
+
+labels.foreach { l =>
+  println(s"F1-Score($l) = " + metrics.fMeasure(l))
+}
+//F1-Score(0.0) = 0.8930817610062892
+//F1-Score(1.0) = 0.37037037037037035
+
 //Precision: 0.8402366863905325 Recall: 0.9530201342281879 Accuracy: 0.8172043010752689
 val binaryClassificationEvaluator = new BinaryClassificationEvaluator().setLabelCol("label")
 def printlnMetric(metricName: String): Double = {
@@ -136,17 +153,32 @@ println("Confusion matrix:")
 println(metrics.confusionMatrix)
 
 
-val precision = metrics.precision(_)
-val recall = metrics.recall(_)
-val accuracy = metrics.accuracy
-val a = 0.0
-println(s"Precision: ${precision(a)} Recall: ${recall(a)} Accuracy: ${accuracy}")
-//Precision: 0.8255813953488372 Recall: 0.9530201342281879 Accuracy: 0.8010752688172043
+val labels = metrics.labels
+labels.foreach { l =>
+  println(s"Precision($l) = " + metrics.precision(l))
+}
+//Precision(0.0) = 0.959731543624161
+//Precision(1.0) = 0.1891891891891892
+
+labels.foreach { l =>
+  println(s"Recall($l) = " + metrics.recall(l))
+}
+//Recall(0.0) = 0.8265895953757225
+//Recall(1.0) = 0.5384615384615384
+
+println("Accuracy " + metrics.accuracy)
+//Accuracy 0.8064516129032258
+
+labels.foreach { l =>
+  println(s"F1-Score($l) = " + metrics.fMeasure(l))
+}
+//F1-Score(0.0) = 0.888198757763975
+//F1-Score(1.0) = 0.28
 
 
 def printlnMetric(metricName: String): Double = {
 val metrics = binaryClassificationEvaluator.setMetricName(metricName).evaluate(pred)
 metrics
 }
-println("Area Under ROC" + printlnMetric("areaUnderROC")) //Area Under ROC0.791764919281698
-println("Area Under PRC"+ printlnMetric("areaUnderPR")) //Area Under PRC0.5421393776288758
+println("Area Under ROC" + printlnMetric("areaUnderROC")) //Area Under ROC0.7765282060584076
+println("Area Under PRC"+ printlnMetric("areaUnderPR")) //Area Under PRC0.5226555772142516
