@@ -1,12 +1,10 @@
-
 import org.apache.spark.sql.SparkSession
-import org.apache.spark.sql.functions.regexp_replace
 import org.apache.spark.sql.functions.{expr, col, column, round}
 import scala.util.Random
 
 // COMMAND ----------
 // val file_location = "../Data/healthcare_dataset_stroke_data.csv"
-val file_location = "/home/jc/Documentos/Macrodatos/macrodata-projects/Laboratorio4/Data/healthcare_dataset_stroke_data.csv"
+val file_location = "../Data/healthcare_dataset_stroke_data.csv"
 
 // COMMAND ----------
 val data = spark
