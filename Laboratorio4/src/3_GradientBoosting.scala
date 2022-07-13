@@ -1,5 +1,9 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.feature.RFormula
+import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
+import org.apache.spark.ml.classification.GBTClassifier
+import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
 
 val file_location = "/home/jc/Documentos/Macrodatos/macrodata-projects/Laboratorio4/Data/stroke_clean.csv"
 
@@ -56,7 +60,7 @@ val test: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [id: int, gen
 */
 // Estimators
 
-import org.apache.spark.ml.classification.GBTClassifier
+
 val gbtClassifier = new GBTClassifier().setLabelCol("label").setFeaturesCol("features")
 
 // println(gbtClassifier.explainParams())
@@ -97,16 +101,15 @@ trainedModel.transform(test).select("label", "prediction").show(5)
 // Evaluatuion Metrics
 // COMMAND ----------
 
+val predict_out = trainedModel.transform(test)
 
-import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
-import org.apache.spark.mllib.evaluation.MulticlassMetrics
-
-val out = trainedModel.transform(test)
+val out = predict_out
     .select("label", "prediction")
     .rdd.map(x => (x(0).asInstanceOf[Double], x(1).asInstanceOf[Double]))
 
-val bMetrics = new BinaryClassificationMetrics(out)
 val mMetrics = new MulticlassMetrics(out)
+val bEvaluator = new BinaryClassificationEvaluator().setLabelCol("label")
+
 
 // confusionMatrix
 println("Confusion matrix:")
@@ -114,8 +117,8 @@ println(mMetrics.confusionMatrix)
 
 /*
 Confusion matrix:
-		1420.0  70.0
-		6.0     2.0
+		1474.0  84.0
+		10.0    4.0
 */
 
 val labels = mMetrics.labels
@@ -141,65 +144,30 @@ labels.foreach { l =>
 	println(s"F1-Score($l) = " + mMetrics.fMeasure(l))
 }
 
+// accuracy
+println(s"accuracy = " + mMetrics.accuracy)
+
 /*
-Precision(0.0) = 0.9957924263674615
-Precision(1.0) = 0.027777777777777776
-Recall(0.0) = 0.9530201342281879
-Recall(1.0) = 0.25
-FPR(0.0) = 0.75
-FPR(1.0) = 0.04697986577181208
-F1-Score(0.0) = 0.9739368998628258
-F1-Score(1.0) = 0.049999999999999996
+Precision(0.0) = 0.993
+Precision(1.0) = 0.045
+Recall(0.0) = 0.946
+Recall(1.0) = 0.286
+FPR(0.0) = 0.714
+FPR(1.0) = 0.0539
+F1-Score(0.0) = 0.969
+F1-Score(1.0) = 0.0784
+accuracy = 0.940
 */
 
-// Precision by threshold
-val precision = bMetrics.precisionByThreshold
-precision.foreach { case (t, p) =>
-  println(s"Threshold: $t, Precision: $p")
+
+def printlnMetric(metricName: String): Double = {
+	val metrics = bEvaluator.setMetricName(metricName).evaluate(predict_out)
+	metrics
 }
-// Recall by threshold
-val recall = bMetrics.recallByThreshold
-recall.foreach { case (t, r) =>
-  println(s"Threshold: $t, Recall: $r")
-}
-
-// Precision-Recall Curve
-val PRC = bMetrics.pr
-
-// F-measure
-val f1Score = bMetrics.fMeasureByThreshold
-f1Score.foreach { case (t, f) =>
-  println(s"Threshold: $t, F-score: $f, Beta = 1")
-}
-val beta = 0.5
-val fScore = bMetrics.fMeasureByThreshold(beta)
-f1Score.foreach { case (t, f) =>
-  println(s"Threshold: $t, F-score: $f, Beta = 0.5")
-}
-
-// AUPRC
-val auPRC = bMetrics.areaUnderPR
-println("Área bajo la curva de precision-recall = " + auPRC)
-
-// Compute thresholds used in ROC and PR curves
-val thresholds = precision.map(_._1)
-
-// ROC Curve
-val roc = bMetrics.roc
-
-// AUROC
-val auROC = bMetrics.areaUnderROC
-println("Area bajo ROC = " + auROC)
+println("Area Under ROC = " + printlnMetric("areaUnderROC")) 
+println("Area Under PRC = "+ printlnMetric("areaUnderPR")) 
 
 /*
-Threshold: 1.0, Precision: 0.027777777777777776
-Threshold: 0.0, Precision: 0.0053404539385847796
-Threshold: 1.0, Recall: 0.25
-Threshold: 0.0, Recall: 1.0
-Threshold: 1.0, F-score: 0.049999999999999996, Beta = 1
-Threshold: 0.0, F-score: 0.010624169986719787, Beta = 1
-Threshold: 1.0, F-score: 0.049999999999999996, Beta = 0.5
-Threshold: 0.0, F-score: 0.010624169986719787, Beta = 0.5
-Área bajo la curva de precision-recall = 0.019363781338080404
-Area bajo ROC = 0.6015100671140939
+Area Under ROC = 0.805
+Area Under PRC = 0.186
 */
