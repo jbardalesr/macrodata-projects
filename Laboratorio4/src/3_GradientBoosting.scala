@@ -28,8 +28,9 @@ data.show(5)
 | 1665|Female| 79|           1|            0|         Yes|Self-employed|         Rural|           174.12|24.0|   never smoked|     1|
 +-----+------+---+------------+-------------+------------+-------------+--------------+-----------------+----+---------------+------+
 */
-
-
+ 
+println(data.filter("stroke == '0'").count())
+println(data.filter("stroke == '1'").count())
 // COMMAND ----------
 val stroke = new RFormula()
                     .setFormula("stroke ~.")
@@ -55,7 +56,8 @@ preparedDF.show(5)
 
 // COMMAND ----------
 val Array(train, test) = preparedDF.randomSplit(Array(0.8, 0.2))
-
+println(train.filter("stroke == '1'").count())
+println(test.filter("stroke == '1'").count())
 /*
 val train: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [id: int, gender: string ... 12 more fields]
 val test: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [id: int, gender: string ... 12 more fields]
@@ -109,12 +111,12 @@ val bEvaluator = new BinaryClassificationEvaluator().setLabelCol("label")
 
 // confusionMatrix
 println("Confusion matrix:")
-println(mMetrics.confusionMatrix)
+println(mMetrics.confusionMatrix.toString)
 
 /*
 Confusion matrix:
-		1474.0  84.0
-		10.0    4.0
+        122.0  22.0
+        19.0    27.0
 */
 
 // COMMAND ----------
@@ -143,15 +145,15 @@ labels.foreach { l =>
 println(s"accuracy = " + mMetrics.accuracy)
 
 /*
-Precision(0.0) = 0.993
-Precision(1.0) = 0.045
-Recall(0.0) = 0.946
-Recall(1.0) = 0.286
-FPR(0.0) = 0.714
-FPR(1.0) = 0.0539
-F1-Score(0.0) = 0.969
-F1-Score(1.0) = 0.0784
-accuracy = 0.940
+Precision(0.0) = 0.847
+Precision(1.0) = 0.587
+Recall(0.0) = 0.865
+Recall(1.0) = 0.551
+FPR(0.0) = 0.449
+FPR(1.0) = 0.135
+F1-Score(0.0) = 0.856
+F1-Score(1.0) = 0.568
+accuracy = 0.784
 */
 
 
@@ -164,6 +166,6 @@ println("Area Under ROC = " + printlnMetric("areaUnderROC"))
 println("Area Under PRC = "+ printlnMetric("areaUnderPR")) 
 
 /*
-Area Under ROC = 0.805
-Area Under PRC = 0.186
+Area Under ROC = 0.838
+Area Under PRC = 0.561
 */

@@ -4,7 +4,8 @@ import scala.util.Random
 
 // COMMAND ----------
 // val file_location = "../Data/healthcare_dataset_stroke_data.csv"
-val file_location = "../Data/healthcare_dataset_stroke_data.csv"
+val file_location = "/home/jc/Documentos/Macrodatos/macrodata-projects/Laboratorio4/Data/healthcare_dataset_stroke_data.csv"
+
 
 // COMMAND ----------
 val data = spark
@@ -214,7 +215,7 @@ data_clean.show(5)
 
 // Exportar a un csv
 
-data_bmi.coalesce(1)
+data_clean.coalesce(1)
   .write.option("header","true")
   .option("sep",",")
   .mode("overwrite")

@@ -1,6 +1,6 @@
 import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.feature.RFormula
-import org.apache.spark.ml.classification.GBTClassifier
+import org.apache.spark.ml.classification.{GBTClassificationModel, GBTClassifier}
 import org.apache.spark.mllib.evaluation.MulticlassMetrics
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
 import org.apache.spark.ml.tuning.TrainValidationSplit
@@ -8,6 +8,7 @@ import org.apache.spark.ml.Pipeline
 import org.apache.spark.ml.tuning.ParamGridBuilder
 import org.apache.spark.ml.PipelineModel
 import org.apache.spark.ml.classification.LogisticRegressionModel
+import org.apache.spark.ml.classification.LinearSVCModel
 
 val file_location = "/home/jc/Documentos/Macrodatos/macrodata-projects/Laboratorio4/Data/stroke_clean.csv"
 
@@ -40,10 +41,10 @@ val gbtClassifier = new GBTClassifier().setLabelCol("label").setFeaturesCol("fea
 val stages = Array(rForm, gbtClassifier)
 val pipeline = new Pipeline().setStages(stages)
 
-                                    // COMMAND ----------
-                                    val params = new ParamGridBuilder()
-                                        .addGrid(rForm.formula, Array(
-                                            "stroke ~.",
+// COMMAND ----------
+val params = new ParamGridBuilder()
+    .addGrid(rForm.formula, Array(
+        "stroke ~.",
         "stroke ~. + work_type:hypertension"))
     .addGrid(gbtClassifier.maxDepth, Array(2, 5, 10))
     .addGrid(gbtClassifier.maxBins, Array(10, 20, 40))
@@ -80,8 +81,8 @@ println(mMetrics.confusionMatrix)
 
 /*
 Confusion matrix:
-930.0  47.0
-5.0    2.0
+        130.0  25.0
+        22.0   31.0
 */
 
 // COMMAND ----------
@@ -110,15 +111,15 @@ labels.foreach { l =>
 println(s"accuracy = " + mMetrics.accuracy)
 
 /*
-Precision(0.0) = 0.995
-Precision(1.0) = 0.041
-Recall(0.0) = 0.952
-Recall(1.0) = 0.286
-FPR(0.0) = 0.714
-FPR(1.0) = 0.048
-F1-Score(0.0) = 0.973
-F1-Score(1.0) = 0.071
-accuracy = 0.947
+Precision(0.0) = 0.839
+Precision(1.0) = 0.585
+Recall(0.0) = 0.855
+Recall(1.0) = 0.554
+FPR(0.0) = 0.446
+FPR(1.0) = 0.145
+F1-Score(0.0) = 0.847
+F1-Score(1.0) = 0.569
+accuracy = 0.774
 */
 
 // COMMAND ----------
@@ -130,6 +131,11 @@ println("Area Under ROC = " + printlnMetric("areaUnderROC"))
 println("Area Under PRC = "+ printlnMetric("areaUnderPR")) 
 
 /*
-Area Under ROC = 0.831
-Area Under PRC = 0.179
+Area Under ROC = 0.826
+Area Under PRC = 0.539
 */
+
+
+tvsFitted.bestModel.
+        asInstanceOf[PipelineModel].
+        stages(1)
