@@ -79,7 +79,6 @@ def parseRDD(rdd: RDD[String]): RDD[Patient]  = {
 val patientRDD = parseRDD(sc.textFile("data_clean_numerico.csv")).map(parsePatient)
 val patientDF = patientRDD.toDF().cache()
 patientDF.show()
-
 /*
 +-----+------+---+---------+------------+-------------+------------+---------+--------------+-----------------+----+--------------+------+
 |   id|gender|age|age_range|hypertension|heart_disease|ever_married|work_type|Residence_type|avg_glucose_level| bmi|smoking_status|stroke|
@@ -87,39 +86,28 @@ patientDF.show()
 | 9046|     0| 67|        4|           0|            1|           1|        3|             1|           228.69|36.6|             2|     1|
 |51676|     1| 61|        4|           0|            0|           1|        4|             0|           202.21|23.6|             0|     1|
 |31112|     0| 80|        4|           0|            1|           1|        3|             0|           105.92|32.5|             0|     1|
+|60182|     1| 49|        3|           0|            0|           1|        3|             1|           171.23|34.4|             1|     1|
+| 1665|     1| 79|        4|           1|            0|           1|        4|             0|           174.12|24.0|             0|     1|
+|56669|     0| 81|        4|           0|            0|           1|        3|             1|           186.21|29.0|             2|     1|
+|53882|     0| 74|        4|           1|            1|           1|        3|             0|            70.09|27.4|             0|     1|
+|10434|     1| 69|        4|           0|            0|           0|        3|             1|            94.39|22.8|             0|     1|
+|27419|     1| 59|        3|           0|            0|           1|        3|             0|            76.15|23.6|             3|     1|
+|60491|     1| 78|        4|           0|            0|           1|        3|             1|            58.57|24.2|             3|     1|
+|12109|     1| 81|        4|           1|            0|           1|        3|             0|            80.43|29.7|             0|     1|
+|12095|     1| 61|        4|           0|            1|           1|        2|             0|           120.46|36.8|             1|     1|
+|12175|     1| 54|        3|           0|            0|           1|        3|             1|           104.51|27.3|             1|     1|
+| 8213|     0| 78|        4|           0|            1|           1|        3|             1|           219.84|23.6|             3|     1|
+| 5317|     1| 79|        4|           0|            1|           1|        3|             1|           214.09|28.2|             0|     1|
+|58202|     1| 50|        3|           1|            0|           1|        4|             0|           167.41|30.9|             0|     1|
 |56112|     0| 64|        4|           0|            1|           1|        3|             1|           191.61|37.5|             1|     1|
 |34120|     0| 75|        4|           1|            0|           1|        3|             1|           221.29|25.8|             1|     1|
 |27458|     1| 60|        4|           0|            0|           0|        3|             1|            89.22|37.8|             0|     1|
 |25226|     0| 57|        3|           0|            1|           0|        2|             1|           217.08|23.6|             3|     1|
 +-----+------+---+---------+------------+-------------+------------+---------+--------------+-----------------+----+--------------+------+
-*/
-patientDF.describe("age").show
-/*
-+-------+------------------+
-|summary|               age|
-+-------+------------------+
-|  count|              1000|
-|   mean|            48.134|
-| stddev|22.849116528350194|
-|    min|                 0|
-|    max|                82|
-+-------+------------------+
-*/
-patientDF.groupBy("stroke").avg("age").show
-/*
-+------+-----------------+
-|stroke|         avg(age)|
-+------+-----------------+
-|     1|67.72690763052209|
-|     0|41.63781624500666|
-+------+-----------------+
-*/
+only showing top 20 rows*/
 //                          0       1       2           3                   4               5               6           7                   8              9        10
 val featureCols = Array("gender", "age", "age_range", "hypertension","heart_disease", "ever_married", "work_type", "Residence_type", "avg_glucose_level","bmi", "smoking_status")
 
-//val featureCols = Array("age", "hypertension","heart_disease", "ever_married", "work_type", "Residence_type", "avg_glucose_level","bmi", "smoking_status")
-
-//val featureCols = Array("age", "hypertension","heart_disease", "avg_glucose_level","Residence_type","bmi", "smoking_status")
 // transformers
 val assembler = new VectorAssembler().setInputCols(featureCols).setOutputCol("features") 
 val labelIndexer = new StringIndexer().setInputCol("stroke").setOutputCol("label")
@@ -163,16 +151,70 @@ predictions.select("label","rawPrediction", "probability","prediction").show()
 */
 val binaryClassificationEvaluator = new BinaryClassificationEvaluator().setLabelCol("label").setRawPredictionCol("rawPrediction")
 val accuracy = binaryClassificationEvaluator.evaluate(predictions)
-println("The accuracy before pipeline fitting: " + accuracy)
-// accuracy: Double = 0.8479956466533649
+
+println("The accuracy: " + accuracy)
+
 def printlnMetric(metricName: String): Double = {
     val metrics = binaryClassificationEvaluator.setMetricName(metricName).evaluate(predictions)
     metrics
 }
 println("Area Under ROC before tuning: " + printlnMetric("areaUnderROC"))
-// Area Under ROC before tuning: 0.8479956466533648
 println("Area Under PRC before tuning: "+ printlnMetric("areaUnderPR"))
-// Area Under PRC before tuning: 0.6318387796865091
 
 val treeModel = model.stages(2).asInstanceOf[DecisionTreeClassificationModel]
 println(s"Learned classification tree model:\n ${treeModel.toDebugString}")
+
+
+
+import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
+import org.apache.spark.mllib.evaluation.MulticlassMetrics
+
+val outer = model.transform(testData).select("label", "prediction").rdd.map(x => (x(0).asInstanceOf[Double], x(1).asInstanceOf[Double]))
+
+
+val bMetrics = new BinaryClassificationMetrics(outer)
+val mMetrics = new MulticlassMetrics(outer)
+
+// confusionMatrix
+println("Confusion matrix:")
+println(mMetrics.confusionMatrix)
+
+/*
+Confusion matrix:
+		1420.0  70.0
+		6.0     2.0
+*/
+
+val labels = mMetrics.labels
+
+// Precision by label
+labels.foreach { l =>
+	println(s"Precision($l) = " + mMetrics.precision(l))
+}
+// Recall by label
+labels.foreach { l =>
+	println(s"Recall($l) = " + mMetrics.recall(l))
+}
+
+// False positive rate by label
+
+labels.foreach { l =>
+	println(s"FPR($l) = " + mMetrics.falsePositiveRate(l))
+}
+
+// F-measure by label
+
+labels.foreach { l =>
+	println(s"F1-Score($l) = " + mMetrics.fMeasure(l))
+}
+
+/*
+Precision(0.0) = 0.9957924263674615
+Precision(1.0) = 0.027777777777777776
+Recall(0.0) = 0.9530201342281879
+Recall(1.0) = 0.25
+FPR(0.0) = 0.75
+FPR(1.0) = 0.04697986577181208
+F1-Score(0.0) = 0.9739368998628258
+F1-Score(1.0) = 0.049999999999999996
+*/
