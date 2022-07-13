@@ -2,18 +2,17 @@ import org.apache.spark.sql.SparkSession
 import org.apache.spark.ml.feature.RFormula
 import org.apache.spark.ml.evaluation.BinaryClassificationEvaluator
 import org.apache.spark.ml.classification.GBTClassifier
-import org.apache.spark.mllib.evaluation.BinaryClassificationMetrics
 import org.apache.spark.mllib.evaluation.MulticlassMetrics
 
 val file_location = "/home/jc/Documentos/Macrodatos/macrodata-projects/Laboratorio4/Data/stroke_clean.csv"
 
 // COMMAND ----------
 val data = spark
-    .read
-    .format("csv")
-    .option("inferSchema", "true")
-    .option("header", "true")
-    .csv(file_location).cache()
+            .read
+            .format("csv")
+            .option("inferSchema", "true")
+            .option("header", "true")
+            .csv(file_location).cache()
 
 // COMMAND ----------
 data.show(5)
@@ -30,10 +29,12 @@ data.show(5)
 +-----+------+---+------------+-------------+------------+-------------+--------------+-----------------+----+---------------+------+
 */
 
-val supervised = new RFormula()
-    .setFormula("stroke ~.")
 
-val fittedRF = supervised.fit(data)
+// COMMAND ----------
+val stroke = new RFormula()
+                    .setFormula("stroke ~.")
+
+val fittedRF = stroke.fit(data)
 val preparedDF = fittedRF.transform(data)
 
 preparedDF.show(5)
@@ -52,20 +53,17 @@ preparedDF.show(5)
 
 // split a la data
 
-val Array(train, test) = preparedDF.randomSplit(Array(0.7, 0.3))
+// COMMAND ----------
+val Array(train, test) = preparedDF.randomSplit(Array(0.8, 0.2))
 
 /*
 val train: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [id: int, gender: string ... 12 more fields]
 val test: org.apache.spark.sql.Dataset[org.apache.spark.sql.Row] = [id: int, gender: string ... 12 more fields]
 */
+
 // Estimators
-
-
 val gbtClassifier = new GBTClassifier().setLabelCol("label").setFeaturesCol("features")
-
 // println(gbtClassifier.explainParams())
-
-
 val trainedModel = gbtClassifier.fit(train)
 
 /*
@@ -86,6 +84,7 @@ trainedModel.transform(train).select("label", "prediction").show(5)
 +-----+----------+
 */
 
+// COMMAND ----------
 trainedModel.transform(test).select("label", "prediction").show(5)
 /*
 +-----+----------+
@@ -102,14 +101,11 @@ trainedModel.transform(test).select("label", "prediction").show(5)
 // COMMAND ----------
 
 val predict_out = trainedModel.transform(test)
-
 val out = predict_out
     .select("label", "prediction")
     .rdd.map(x => (x(0).asInstanceOf[Double], x(1).asInstanceOf[Double]))
-
 val mMetrics = new MulticlassMetrics(out)
 val bEvaluator = new BinaryClassificationEvaluator().setLabelCol("label")
-
 
 // confusionMatrix
 println("Confusion matrix:")
@@ -121,6 +117,7 @@ Confusion matrix:
 		10.0    4.0
 */
 
+// COMMAND ----------
 val labels = mMetrics.labels
 
 // Precision by label
@@ -133,13 +130,11 @@ labels.foreach { l =>
 }
 
 // False positive rate by label
-
 labels.foreach { l =>
 	println(s"FPR($l) = " + mMetrics.falsePositiveRate(l))
 }
 
 // F-measure by label
-
 labels.foreach { l =>
 	println(s"F1-Score($l) = " + mMetrics.fMeasure(l))
 }
@@ -160,6 +155,7 @@ accuracy = 0.940
 */
 
 
+// COMMAND ----------
 def printlnMetric(metricName: String): Double = {
 	val metrics = bEvaluator.setMetricName(metricName).evaluate(predict_out)
 	metrics
