@@ -16,8 +16,8 @@ val registros1 = ssc.socketTextStream("201.230.99.133",9999)
 val registros2 = ssc.socketTextStream("192.168.1.13",9998)
 val registros = registros1.union(registros2)
 
+
 val saveModel = PipelineModel.load("./tmp/rf-model")
-val saveModel = PipelineModel.load("/home/jc/Documentos/Macrodatos/macrodata-projects/Final/src/tmp/rf-model")
 case class Patient(
     id: Double,
     gender: Integer, 
@@ -155,6 +155,33 @@ registros.foreachRDD(rdd => {
 
         ListMap(numVertices.countByValue().toSeq.sortBy(_._1):_*).foreach(println)
         
+
+        val casePatient = rawData.
+                            filter(event => event.hypertension == 1 && event.age < 60).cache().
+                            map(_.id).
+                            collect.
+                            toSet
+
+        val bcCasePatient = sc.broadcast(casePatient)
+
+        val filteredGraph = graph.subgraph(vpred = {case(id, attr) => 
+                                    val isPatient = attr.isInstanceOf[PatientProperty]
+                                    val patient = if(isPatient) attr.asInstanceOf[PatientProperty] else null
+                                    !isPatient || (bcCasePatient.value contains patient.patientId)
+                                })
+
+        val hipertension = filteredGraph.inDegrees.
+                                    takeOrdered(5)(scala.Ordering.by(-_._2))
+
+        val index = hipertension.take(0)
+
+        if (index != null) {
+            println("Filtro por hipertension y edades")
+            hipertension.foreach(println)
+
+        }
+
+
         predictions
         .select("id", "prediction")
         .show()

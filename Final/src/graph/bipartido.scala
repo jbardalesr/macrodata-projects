@@ -91,20 +91,40 @@ val edges = predictStroke.
 val vertices = predictStrokeVertex.union(patientVertex)
 
 val graph = Graph(vertices, edges)
-//  Graph.fromEdgeTuples(vertices, edges)
 
 val connectedComponents = graph.connectedComponents()
 
 connectedComponents.vertices.take(5)
 connectedComponents.edges.take(5)
 
-println("Total number of edges in the graph: " + connectedComponents.edges.count());
-println("Total number of vertices in the graph: " + connectedComponents.vertices.count());
+println("Numero total de artistas en el grafo: " + connectedComponents.edges.count());
+println("Numero total de vertices en el grafo: " + connectedComponents.vertices.count());
 
 val numVertices = (connectedComponents.vertices.map(pair => (pair._2,1))
                     .reduceByKey(_ + _)
                     .map(pair => pair._2))
-println("Number of Connected Components: " + numVertices.count());
+
+println("Numero de conexiones: " + numVertices.count());
 
 ListMap(numVertices.
        countByValue().toSeq.sortBy(_._1):_*).foreach(println)
+
+// personas que tengan hypertension y menores a 60 años
+val casePatient = rawData.
+                    filter(event => event.hypertension == 1 && event.age < 60).cache().
+                    map(_.id).
+                    collect.
+                    toSet
+
+val bcCasePatient = sc.broadcast(casePatient)
+
+val filteredGraph = graph.subgraph(vpred = {case(id, attr) => 
+                            val isPatient = attr.isInstanceOf[PatientProperty]
+                            val patient = if(isPatient) attr.asInstanceOf[PatientProperty] else null
+                            !isPatient || (bcCasePatient.value contains patient.patientId)
+                        })
+
+val hipertension = filteredGraph.inDegrees.
+                            takeOrdered(5)(scala.Ordering.by(-_._2))
+
+graph.vertices.filter(_._1 == 5109).collect
